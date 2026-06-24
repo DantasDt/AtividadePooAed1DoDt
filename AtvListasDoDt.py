@@ -100,3 +100,28 @@ for i in l4:
 print(f"\nLista 4: {l4}")
 print(f"Lista 5: {l5}")
 print(f"Interseção: {t1}")
+
+# Atividade 6
+ 
+l6 = []
+sub = []
+for i in range(20):
+    l6.append(randint(0, 100))
+
+for i in range(0, len(l6), 3):
+    sub.append(l6[i:i + 3])
+
+print(f"\nLista\n{l6}")
+print(f"Sublistas\n{sub}")
+
+# Atividade 7
+
+n = int(input("\nInforme o numero da matriz: "))
+mat = []
+
+
+for i in range(n):
+    mat.append([i] * n)
+
+for linha in mat:
+    print(linha)
