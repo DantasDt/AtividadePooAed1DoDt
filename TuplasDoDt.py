@@ -32,9 +32,9 @@ resultado = {}
 def comprimir(tuplasOri):
     for tupla in tuplasOri:
         if tupla[0] in resultado:
-            resultado[tupla] += tupla[1]
+            resultado[tupla[0]] += tupla[1]
         else:
-            resultado = tupla
+            resultado[tupla[0]] = tupla[1]
 
 tuplasOri = [('maçã', 3), ('banana', 2), ('maçã', 5), ('laranja', 1), ('banana', 3)]
 comprimir(tuplasOri)
