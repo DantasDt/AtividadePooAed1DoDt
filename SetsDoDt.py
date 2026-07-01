@@ -45,7 +45,7 @@ for elemento in range(len(A)):
     if B[elemento] not in A[0:len(A)]:
             print(B[elemento], "Lista A")
 
-
+# Atividade 5
 alfabeto = set("abcdefghijklmnopqrstuvwxyz")
 frase2 = str(input("Informe a str: ")).lower()
 letras = set()
